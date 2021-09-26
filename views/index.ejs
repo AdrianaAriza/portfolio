@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <!-- CSS section --> 
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+  <link rel="stylesheet" href="/Content/app.css" />
+  <style>
+    [class*="col-"] {
+      padding-top: 10%;
+      background-color: gainsboro;
+      border: 8px solid rgb(255, 255, 255);
+      border-radius: 5px;
+      color: azure;
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home"><i class="fas fa-house-user"></i></i> Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/about"><i class="fas fa-portrait"></i></i> Abut me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects"><i class="fas fa-align-justify"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services"><i class="fas fa-cogs"></i></i> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactme"><i class="fas fa-comments-dollar"></i> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="container mt-6 pt-6"><%= title %></h1>
+  <div class="container">
+    <div class="row">
+      <a class="col-md-6" href="/about"><div>About Me</div></a>
+      <a class="col-md-6" href="/projects"><div>Projects</div></a>
+    </div>
+    <div class="row">
+      <a class="col-md-6" href="/services"><div>Services</div></a>
+      <a class="col-md-6" href="/contactme"><div>Contac Me</div></a>
+    </div>
+  </div>
+  <script src="/Scripts/app.js"></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+  <footer class="text-center text-lg-start bg-light text-muted fixed-bottom">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+          © 2021 Copyright
+      </div>
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
