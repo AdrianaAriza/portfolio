@@ -1,3 +1,10 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<%- include partials/header.ejs %>  
+<%- include partials/main_nav.ejs %> 
+<div class="col-xs-12">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <img src="/Assets/images/404-error.png">
+</div>
+
+<%- include partials/bottom_nav.ejs %>   
+<%- include partials/footer.ejs %>

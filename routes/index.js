@@ -2,8 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Home' });
+});
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Welcome to the Home page' });
+  res.render('index', { title: 'Home' });
 });
 router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About me' });
@@ -15,7 +18,7 @@ router.get('/services', function(req, res, next) {
   res.render('index', { title: 'Services' });
 });
 router.get('/contactme', function(req, res, next) {
-  res.render('index', { title: 'Cantact' });
+  res.render('index', { title: 'Contact' });
 });
 
 module.exports = router;
