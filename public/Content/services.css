@@ -1,0 +1,38 @@
+/* services page styles */
+.img-rest {
+    background-image: url(/Assets/images/services/rest-api-services.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+.img-script {
+    background-image: url(/Assets/images/services/scripting.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.img-web {
+    background-image: url(/Assets/images/services/web.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.img-general {
+    background-image: url(/Assets/images/services/general.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: -70px;
+}
+
+@media (max-width:500px){
+    .img-rest {
+        background-size: 30%;
+    }
+    .img-script {
+        background-size: 25%;
+    }
+    .img-web {
+        background-size: 25%;
+    }
+    .img-general {
+        background-size: 35%;
+        background-position-x: -35px;
+    }
+}

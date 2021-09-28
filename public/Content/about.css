@@ -1,0 +1,31 @@
+/* about page styles */
+.p-about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    padding: 1%;
+}
+.p-name {
+    font-size: 2rem;
+}
+.about-img{
+    border-radius: 50%;
+    max-height: 340px;
+    max-width: 340px;
+}
+
+/* about page styles ---- responsive*/
+@media (max-width:770px){
+    .p-about {
+        padding-top: 20%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+@media (max-width:380px){
+    .p-about {
+        padding-top: 35%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+}

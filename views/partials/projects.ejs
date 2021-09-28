@@ -1,14 +1,62 @@
-<h1 class="container pt-6"><%= title %></h1>
-  <h4 class="container pt-6">ajndfnsdfngsdfnsdnfdff sdfklskdfnjsndfmgnsdf,mn sdkjfgadugyladiufgajdgadg hakjhdgahg</h4>
+<h1 class="container pt-6">
+  <%= title %>
+</h1>
+<p class="container pt-6">Here some of the projects and companies I have worked in</p>
 
-
-<div class="container pt-6 h-75">
+<div class="container slides">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators pt-3">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
     <div class="row">
-      <a class="col-md-6 col-mp" href="/about"><div>About Me</div></a>
-      <a class="col-md-6 col-mp" href="/projects"><div>Projects</div></a>
+      <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <img src="/Assets/images/projects/rest-api.png" class="d-block w-100">
+        </div>
+        <div class="col-md-5">
+          <h5>First slide label</h5>
+          <p>Some representative sdfgsdfg placeholder content for the first slide.</p>
+        </div>
+        <div class="col-md-1"></div>
     </div>
-    <div class="row">
-      <a class="col-md-6 col-mp" href="/services"><div>Services</div></a>
-      <a class="col-md-6 col-mp" href="/contactme"><div>Contac Me</div></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <img src="/Assets/images/projects/restaurant.png" class="d-block w-100">
+        </div>
+        <div class="col-md-5">
+          <h5>First slide label</h5>
+          <p>Some representative sdfgsdfg placeholder content for the first slide.</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <img src="/Assets/images/projects/gifos.png" class="d-block w-100">
+        </div>
+        <div class="col-md-5">
+          <h5>First slide label</h5>
+          <p>Some representative sdfgsdfg placeholder content for the first slide.</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

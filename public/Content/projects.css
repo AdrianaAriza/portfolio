@@ -1,0 +1,21 @@
+/*projects page styles*/
+.img-projects{
+    height: 50%;
+    width: 50%;
+}
+.slides{
+    padding: 5%;
+}
+
+.carousel-back{
+    background-color: cadetblue;
+}
+
+.carousel-indicators {
+    bottom:-70px;
+  }
+  @media (max-width:900px){
+    .carousel-indicators {
+        bottom:-30px;
+      }
+}

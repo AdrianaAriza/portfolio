@@ -8,15 +8,19 @@ router.get('/', function(req, res, next) {
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
+/* GET about me page. */
 router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About me' });
 });
+/* GET projects me page. */
 router.get('/projects', function(req, res, next) {
   res.render('index', { title: 'Projects' });
 });
+/* GET services me page. */
 router.get('/services', function(req, res, next) {
   res.render('index', { title: 'Services' });
 });
+/* GET contact me page. */
 router.get('/contactme', function(req, res, next) {
   res.render('index', { title: 'Contact' });
 });
