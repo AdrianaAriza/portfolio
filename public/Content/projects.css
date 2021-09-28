@@ -1,5 +1,10 @@
-/*projects page styles*/
+/* 
+    projects.css 
+    Luz Adriana Ariza Bustos: 301161864
+    27-09-2021
+*/
 
+/*projects page styles*/
 .slides{
     padding: 5%;
 }
@@ -11,6 +16,8 @@
 .carousel-indicators {
     bottom:-70px;
   }
+
+/* responsive */
   @media (max-width:900px){
     .carousel-indicators {
         bottom:-30px;

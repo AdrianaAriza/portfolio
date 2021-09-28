@@ -1,19 +1,21 @@
 /* home page styles */
 .img-projects {
-    background-image: url(/Assets/images/projects.png);
+    background-image: url(/Assets/images/home/projects.png);
     background-repeat: no-repeat;
     background-size: 35%;
 }
 .img-services {
-    background-image: url(/Assets/images/services.png);
+    background-image: url(/Assets/images/home/services.png);
     background-repeat: no-repeat;
     background-size: 40%;
 }
 .img-contact_me {
-    background-image: url(/Assets/images/contact_me.png);
+    background-image: url(/Assets/images/home/contact_me.png);
     background-repeat: no-repeat;
     background-size: 40%;
 }
+
+/* responsive */
 @media (max-width:900px){
     .img-projects {
         background-size: 30%;

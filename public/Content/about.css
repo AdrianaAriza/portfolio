@@ -1,3 +1,9 @@
+/* 
+    about.css 
+    Luz Adriana Ariza Bustos: 301161864
+    27-09-2021
+*/
+
 /* about page styles */
 .p-about {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -13,7 +19,7 @@
     max-width: 340px;
 }
 
-/* about page styles ---- responsive*/
+/* about page styles ---- responsive */
 @media (max-width:770px){
     .p-about {
         padding-top: 20%;
