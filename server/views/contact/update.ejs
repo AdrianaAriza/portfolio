@@ -1,32 +1,24 @@
+<%- include ../partials/header.ejs %> 
+<%- include ../partials/main_nav.ejs %> 
 <div class="container col-md-4 pt-5">
  
     <div class="column col-md-12">
-        <form action="home" class="row g-3 needs-validation" novalidate>
+        <form action="<%= Contact._id %>" class="row g-3 needs-validation" novalidate method="post">
             <div class="col-md-12 position-relative">
-              <label for="name" class="form-label">First name</label>
-              <input type="text" class="form-control" id="firstName" required>
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" required value="<%= Contact.name %>">
               <div class="valid-tooltip">
                 Looks good!
               </div>
               <div class="invalid-tooltip">
-                Please write your name.
-              </div>
-            </div>
-            <div class="col-md-12 position-relative">
-              <label for="lastName" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="lastName" required>
-              <div class="valid-tooltip">
-                Looks good!
-              </div>
-              <div class="invalid-tooltip">
-                Please write your lastname
+                Please write your email.
               </div>
             </div>
             <div class="col-md-12 position-relative">
               <label for="validationTooltipUsername" class="form-label">Email</label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                <input type="email" class="form-control" id="email" aria-describedby="validationTooltipUsernamePrepend" required>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="validationTooltipUsernamePrepend" required required value="<%= Contact.emailAddress %>">
                 <div class="invalid-tooltip">
                   Please choose a valid email.
                 </div>
@@ -36,10 +28,10 @@
               </div>
             </div>
             <div class="col-md-12 position-relative">
-              <label for="phoneNumber" class="form-label">Contact number</label>
+              <label for="phone" class="form-label">Contact number</label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fas fa-phone-alt"></i></span>
-                <input type="tel" class="form-control" id="phoneNumber" required>
+                <input type="tel" class="form-control" id="phone" name="phone" required required value="<%= Contact.phoneNumber %>">
                 <div class="invalid-tooltip">
                   Please provide a valid number.
                 </div>
@@ -49,9 +41,12 @@
                 </div>
             </div>
             <div class="col-12 pt-3">
-              <button class="btn btn-secondary" type="submit" onclick="get_data()">Update</button>
-              <button class="btn btn-secondary" type="submit" onclick="get_data()">Delete</button>
+              <input class="btn btn-secondary" type="submit" value="Submit"></input>
+              <a class="btn btn-secondary" type="submit" href="/contacts/delete/<%= Contact._id %>">Delete</a>
+              <a class="btn btn-secondary" type="submit" href="/contacts">Cancel</a>
             </div>
           </form>
     </div>
   </div>
+<%- include ../partials/bottom_nav.ejs %>   
+<%- include ../partials/footer.ejs %>

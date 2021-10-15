@@ -28,13 +28,6 @@ router.get('/contactme', function(req, res, next) {
 router.get('/login', function(req, res, next) {
   res.render('index', { title: 'Login' });
 });
-/* GET login page. */
-router.get('/list', function(req, res, next) {
-  res.render('index', { title: 'List' });
-});
-/* GET login page. */
-router.get('/update', function(req, res, next) {
-  res.render('index', { title: 'Update' });
-});
+
 
 module.exports = router;
