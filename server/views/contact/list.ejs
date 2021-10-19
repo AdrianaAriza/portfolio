@@ -1,0 +1,33 @@
+<%- include ../partials/header.ejs %>  
+<%- include ../partials/main_nav.ejs %> 
+<div class="container col-md-8 pt-5">
+<div class="table-responsive col-md-12">
+
+<table class="table table-bordered table-striped table-hover table-condensed  text-center" id="DyanmicTable">
+    <tr>
+      <th class="text-center">Full Name</th>
+      <th class="text-center">WebSite</th>
+      <th class="text-center">Contact No</th>
+      <th class="text-center">Update/Delete</th>
+    </tr>
+
+  <!-- repeatable section -->
+  <% for(let count = 0; count < ContactList.length; count++) {%>
+    <tbody>
+      <tr>
+        <td><%= ContactList[count].name %></td>
+        <td><%= ContactList[count].emailAddress %></td>
+        <td><%= ContactList[count].phoneNumber %></td>
+        <td>
+          <a id="addNewRow" class="btn btn-secondary btn-sm" href="/contacts/update/<%= ContactList[count]._id %>">Update</a>
+          <a id="addNewRow" class="btn btn-secondary btn-sm" href="/contacts/delete/<%= ContactList[count]._id %>">Delete</a>
+        </td>
+      </tr>
+      
+    </tbody>
+  <% } %>
+</table>
+</div>
+</div>
+<%- include ../partials/bottom_nav.ejs %>   
+<%- include ../partials/footer.ejs %>
