@@ -7,8 +7,8 @@ var logger = require('morgan');
 // modules for authentication
 let session = require('express-session');
 let passport = require('passport');
-let passportLocal = require('passport');
-let localStraregy = passportLocal.Strategy;
+let passportLocal = require('passport-local');
+let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
 
 
@@ -67,8 +67,11 @@ passport.serializeUser(userModel.User.serializeUser());
 passport.deserializeUser(userModel.User.deserializeUser());
 
 app.use('/', indexRouter);
-app.use('/users', userRouter)
+app.use('/user', userRouter)
 app.use('/contacts', contactRouter);
+
+// implement a User Authentication Strategy
+passport.use(user.createStrategy());
 
 
 // catch 404 and forward to error handler

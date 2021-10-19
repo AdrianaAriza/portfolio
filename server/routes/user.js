@@ -1,16 +1,9 @@
-let express = require('express');
-let router = express.Router();
-let mongoose = require('mongoose');
+var express = require('express');
+var router = express.Router();
 
-let User = require('../models/user');
-
-
-/* GET contact list */
-router.get('/login', (req, res, next) => {
-        res.render('contact/list', {
-            title: "Contact List", ContactList: contactList
-        })
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  res.send('Placeholder');
 });
-
 
 module.exports = router;
