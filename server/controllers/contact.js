@@ -7,7 +7,8 @@ let Contact = require('../models/contact');
 
 /* GET contact list */
 module.exports.displayContactList = (req, res, next) => {
-    Contact.find((err, contactList) => {
+    /* sort to sort contacts alphabetically */
+    Contact.find({}).sort('name').exec((err, contactList) => {
         if(err){
             console.error(err)
             return console.error(err);
