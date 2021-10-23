@@ -1,3 +1,9 @@
+/* 
+    contact.js 
+    Luz Adriana Ariza Bustos: 301161864
+    23-10-2021
+*/
+
 let mongoose =  require('mongoose')
 
 //create business contact model

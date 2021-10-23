@@ -1,3 +1,9 @@
+/* 
+    user.js 
+    Luz Adriana Ariza Bustos: 301161864
+    23-10-2021
+*/
+
 // require modules for the User model
 let mongoose = require('mongoose');
 const passport = require('passport');

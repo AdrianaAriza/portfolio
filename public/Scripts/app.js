@@ -29,6 +29,7 @@
       }, false)
     })
 
+  // confirmation popuo when click on delete buttons   
   let deleteButtons = document.querySelectorAll('.btn-delete');
 
   for (button of deleteButtons) {
