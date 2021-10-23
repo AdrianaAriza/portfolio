@@ -1,10 +1,14 @@
-#!/usr/bin/env node
+/* 
+    server.js 
+    Luz Adriana Ariza Bustos: 301161864
+    23-10-2021
+*/
 
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('portfolio:server');
 var http = require('http');
 

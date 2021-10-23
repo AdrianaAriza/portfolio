@@ -1,0 +1,73 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+
+<main class="container pt-5">
+    <% if(messages.length > 0) {%>
+      <div class="alert alert-danger">
+          <%= messages %>
+      </div>
+    <% } %>
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-5">
+        <div class="card" style="border-radius: 1rem; background-color: #cec7c8;">
+          <div class="row g-0">
+            <div class="col-md-12 col-lg-12 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <form action="" method="post" autocomplete="off">
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <span class="h1 fw-bold mb-0" style="color: #6e6b6c">Register</span>
+                    <i class="fab fa-wpforms fa-2x px-3" style="color: #8d898a"></i>
+                  </div>
+                  <fieldset class="form-outline mb-4">
+                    <input type="text" class="form-control"
+                    name="username" placeholder="Enter username"
+                    id="username" required autofocus>
+                    <label for="username">Username: </label>
+
+                </fieldset>
+
+                <fieldset class="form-outline mb-4">
+                    <input type="password" class="form-control"
+                    name="password" placeholder="Enter password"
+                    id="password" required>
+                    <label for="password">Password: </label>
+                    
+                </fieldset>
+
+                <fieldset class="form-outline mb-4">
+                    <input type="email" class="form-control"
+                    name="email" placeholder="Enter Email Address"
+                    id="email" required>
+                    <label for="email">Email: </label>
+                    
+                </fieldset>
+
+                <fieldset class="form-outline mb-4">
+                    <input type="text" class="form-control"
+                    name="displayName" placeholder="Enter Display Name"
+                    id="displayName" required>
+                    <label for="displayName">Display Name: </label>
+                    
+                </fieldset>
+
+                  <div class="pt-1 mb-4">
+                    <input type='submit' value='Login' class="btn btn-lg btn-block" style="background-color:#ada9a9; color: #eeeced" type="button"></input>
+                    <a href="/">
+                      <input type='submit' value='Cancel' class="btn btn-lg btn-block" style="background-color:#ada9a9; color: #eeeced" type="button"></input>
+                    </a>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>
