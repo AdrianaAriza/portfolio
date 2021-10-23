@@ -19,8 +19,8 @@
         <td><%= ContactList[count].emailAddress %></td>
         <td><%= ContactList[count].phoneNumber %></td>
         <td>
-          <a id="addNewRow" class="btn btn-secondary btn-sm" href="/contacts/update/<%= ContactList[count]._id %>">Update</a>
-          <a id="addNewRow" class="btn btn-secondary btn-sm" href="/contacts/delete/<%= ContactList[count]._id %>">Delete</a>
+          <a id="update" class="btn btn-secondary btn-sm" href="/contacts/update/<%= ContactList[count]._id %>">Update</a>
+          <a id="delete" class="btn btn-secondary btn-sm btn-delete" href="/contacts/delete/<%= ContactList[count]._id %>">Delete</a>
         </td>
       </tr>
       

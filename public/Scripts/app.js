@@ -4,19 +4,19 @@
     27-09-2021
 */
 
-(function(){
-    
-  function Start(){
-        console.log("Starting .....");
-    }
-    
+(function () {
+
+  function Start() {
+    console.log("Starting .....");
+  }
+
   window.addEventListener("load", Start)
 
-// Function for the submit form button
+  // Function for the submit form button
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   var forms = document.querySelectorAll('.needs-validation')
-  
+
   // Loop over them and prevent submission
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
@@ -28,10 +28,21 @@
         form.classList.add('was-validated')
       }, false)
     })
+
+  let deleteButtons = document.querySelectorAll('.btn-delete');
+
+  for (button of deleteButtons) {
+    button.addEventListener('click', (event) => {
+      if (!confirm("Are you sure?")) {
+        event.preventDefault();
+        window.location.assign('/contacts');
+      }
+    });
+  }
 })()
 
 // captturing user information and saving in local storage
-function get_data(){
+function get_data() {
   console.log('getting data from user')
   var firstName = document.getElementById('validationTooltip01').value
   var lastName = document.getElementById('validationTooltip02').value
