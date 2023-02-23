@@ -5,6 +5,11 @@
 */
 
 /* services page styles */
+.img-ai {
+    background-image: url(/Assets/images/services/ai.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
 .img-rest {
     background-image: url(/Assets/images/services/rest-api-services.png);
     background-repeat: no-repeat;
@@ -29,6 +34,9 @@
 
 /* responsive */
 @media (max-width:500px){
+    .img-ai {
+        background-size: 30%;
+    }
     .img-rest {
         background-size: 30%;
     }
